@@ -11,9 +11,10 @@ module Tokenable
       @n        = 32
       @attrs    = :token
       @meth0d   = :urlsafe_base64
-      @callback = :before_create
 
       @model = model
+
+      self.callback = :before_create
     end
 
     def attr=(value)
